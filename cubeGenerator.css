@@ -1,0 +1,168 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content{
+    display: grid;
+    place-content: center;
+}
+
+button{
+    padding: 5px 20px;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 2px;
+    border: none;
+    background-color: white;
+    margin-top: 50px;
+}
+
+.face{
+    display: none;
+}
+
+#box{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: relative;
+}
+
+ul li{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: none;
+}
+#six{
+    display: block;
+}
+
+/*One dot*/
+#one li:nth-child(1){
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+/*Two dot*/
+#two li:nth-child(1){
+    top: 25%;
+    left: 25%;  /*top left*/
+    display: block;
+}
+#two li:nth-child(2){
+    bottom: 25%;
+    right: 25%; /*bottom right*/
+    display: block;
+}
+
+/*Three dot*/
+#three li:nth-child(1){
+    top: 20%;
+    left: 20%;  /*top left*/
+    display: block;
+}
+#three li:nth-child(2){
+    bottom: 50%;
+    right: 50%; /*centered dot*/
+    transform: translate(50%, 50%);
+    display: block;
+}
+#three li:nth-child(3){
+    bottom: 20%;
+    right: 20%; /*botton left*/
+    display: block;
+}
+
+/*Four dot*/
+#four li:nth-child(1){
+    top: 20%;
+    left: 20%;  /*top left*/
+    display: block;
+}
+#four li:nth-child(2){
+    top: 20%;
+    right: 20%; /*top right*/
+    display: block;
+}
+#four li:nth-child(3){
+    bottom: 20%;
+    left: 20%;  /*bottom left*/
+    display: block;
+}
+#four li:nth-child(4){
+    bottom: 20%;
+    right: 20%; /*bottom right*/
+    display: block;
+}
+
+/*Five dot*/
+#five li:nth-child(1){
+    top: 20%;
+    left: 20%;  /*top left*/
+    display: block;
+}
+#five li:nth-child(2){
+    top: 20%;
+    right: 20%; /*top right*/
+    display: block;
+}
+#five li:nth-child(3){
+    top: 50%;
+    left: 50%;  /*centered dot*/
+    transform: translate(-50%, -50%);
+    display: block;
+}
+#five li:nth-child(4){
+    bottom: 20%;
+    left: 20%;  /*bottom left*/
+    display: block;
+}
+#five li:nth-child(5){
+    bottom: 20%;
+    right: 20%; /*bottom right*/
+    display: block;
+}
+
+/*Six dot*/
+#six li:nth-child(1){
+    top: 15%;
+    left: 20%;  /*top left*/
+    display: block;
+}
+#six li:nth-child(2){
+    top: 15%;
+    right: 20%; /*top right*/
+    display: block;
+}
+#six li:nth-child(3){
+    top: 50%;
+    left: 20%; /*left center dot*/
+    transform: translateY(-50%);
+    display: block;
+}
+#six li:nth-child(4){
+    bottom: 15%;
+    left: 20%;  /*bottom left*/
+    display: block;
+}
+#six li:nth-child(5){
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%); /*right center dot*/
+    display: block;
+}
+#six li:nth-child(6){
+    bottom: 15%;
+    right: 20%; /*bottom right*/
+    display: block;
+}
